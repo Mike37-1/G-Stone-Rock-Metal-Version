@@ -1,0 +1,36 @@
+.lageplan{
+    width: 100%;
+    background-color:#000;
+    padding: 5vh 0 3vh 0;
+    }
+
+    .lageplan-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 14vw 0 14vw;
+        gap: 3vh;
+    }
+        .lageplan-bild{
+            width: 55vw;
+            height: auto;
+        }
+        .lageplan-buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+            .lageplan-button{
+                margin: 1vh 2.5vw 1vh 2.5vw;
+                flex-grow: 0;
+            }
+
+    @media(max-width:1200px){
+        .lageplan-bild{
+            width: 75vw;
+        }
+       
+    }

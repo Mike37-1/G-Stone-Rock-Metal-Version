@@ -1,0 +1,81 @@
+.line-up-tickets{
+    background-color: #000;
+    padding: 4vh 0 4vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    .plakat-line-up{
+        border-radius: 10px;
+        height: auto;
+        width: 22.5vw;
+        margin-right: 5vw;
+    }
+    .tickets-container{
+        border-radius: 10px;
+        width: 22.5vw;
+        min-height: 64vh;
+        background-color: #000;
+        border: solid #d14b37;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2vh 2.5vw 0 3vw;
+        box-sizing: border-box;
+        margin-left: 5vw;
+    }
+    .preis-und-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+        .tickets-überschrift{
+         font-size: clamp(1.7rem, 6vw, 3rem);  
+        }
+
+        .tickets-angebote{
+            font-size: clamp(1.3rem, 3vw, 2rem);
+        }
+
+        .tickets-preise-button{
+            transform: scale(0.7);
+            height: fit-content;
+            min-width: auto;
+            margin-left: -1vw;
+            margin-right: 0;
+        }
+
+
+        #Line-Up{
+            scroll-margin-top: 30vh;
+        }
+
+        #Tickets{
+            scroll-margin-top: 30vh;
+        }
+
+        @media(max-width:1900px){
+            .plakat-line-up, .tickets-container{
+                width: 50vw;
+                min-height: 0;
+                height: auto;
+                margin: 4vh;
+            }
+            .tickets-container{
+                margin-top: 0;
+                padding-bottom: 2vh;
+            }
+            #Tickets{
+                scroll-margin-top: 20vh;
+            }
+        }
+        @media(max-width:500px){
+            .tickets-container, .plakat-line-up{
+                width: 65vw;
+            }
+        }

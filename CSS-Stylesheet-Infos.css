@@ -1,0 +1,118 @@
+.info {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:4vh 14vw 4vh 14vw;
+    }
+
+.carousel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.carousel-item-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .card{
+        width: 27vw;
+        min-height: auto;
+        max-height: 80vh;
+        background-color: #000;
+        border: #d14b37;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 3.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        }
+        .karte-überschrift{
+            font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+            margin: 1vw 1vw 0.5vh 1vw;
+            text-align: center;
+        }
+        .karte-text{
+            font-size: clamp(0.8rem, 1.8vw, 2rem);
+            margin: 0 1vw 1vh;
+            text-align: justify;
+        }
+        .karte-button{
+            margin: 0.5vh;
+            transform: scale(clamp(0.5, 0.8, 1));
+        }
+        .carousel-karte-bild{
+        top: 0;
+        width: 27vw;
+        height: auto;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .side{
+        transform: scale(0.7);
+        z-index: 0;
+    }
+    .main{
+        order: 3;
+    }
+    .l{
+        order: 2;
+    }
+    .r{
+        order: 4;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .button-left{
+        order: 1;
+        cursor: pointer;
+    }
+    .button-right{
+        order: 5;
+        cursor: pointer;
+    }
+    
+    .button-left:hover, .button-right:hover{
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    #infos{
+        scroll-margin-top: 15vh;
+    }
+
+    @media(max-width:1250px){
+        .info{
+            min-height: 55vh;
+            height: auto;
+        }
+        .side, .l, .r{
+            display: none;
+        }
+        .card{
+            width: 50vw;
+        }
+        .carousel-karte-bild{
+            width: 50vw;
+        }
+        .karte-button{
+            margin: 0.5vh 4vw 0.5vh 4vw;
+        }
+    }
+
+    @media(max-width:500px){
+        .card{
+            width: 65vw;
+        }
+        .carousel-karte-bild{
+            width: 65vw;
+        }
+    }

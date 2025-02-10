@@ -1,0 +1,148 @@
+body, html, ul, li, main,h1,h2,h3,h4, a, p{
+    margin: 0;
+    padding: 0;
+    }
+html{
+    font-size: 150%;
+}
+/*fonts*/
+    .burghi{
+        font-family: "burghi-variable", sans-serif;
+        }
+    .bebas-rounded {
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+    .bebas-pro {
+        font-family: "bebas-neue-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+    .logo-font{
+        font-family: "Dubba Dubba", sans-serif;
+    }
+    .heading-font{
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .text-font{
+        font-family: "bebas-neue-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .purple{
+        color: #7400BE;
+    }
+    .yellow{
+        color: #F5BD00;
+    }
+    @font-face {
+        font-family: 'Dubba Dubba';
+        src: url(Fonts/dubba-dubba-nf/DubbaDubbaNF.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    .main-color-1{
+        color: #d14b37;
+    }
+
+    .main-color-2{
+        color: #ffff;
+    }
+/*Titles*/
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: clamp(1.3rem, 4vw, 2.5rem);
+    }
+    p{
+        font-size: clamp(1rem, 3vw, 1.5625rem);
+    }
+    .p{
+        font-size: clamp(1rem, 3vw, 1.5625rem);
+    }
+
+    .gefüllter-button-lila{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #000;
+        padding: 1vh 4.5vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color: #d14b37;;
+        border: none;
+        border-radius: 70px;
+        text-decoration: none;
+        border: #d14b37;
+        border-style: solid;
+        border-width: 3px;
+        cursor:pointer;
+        margin: 1vw 1vw 1vw 0;
+    }
+    .gefüllter-button-lila:hover{
+        border: solid #fff;
+        color: #fff;
+        }
+    
+    .rahmen-button-lila{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #000;
+        padding: 1vh 3vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color:#d14b37;
+        border: #d14b37;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 70px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .rahmen-button-lila:hover{
+        border: #fff;
+        border-style: solid;
+        border-width: 3px;
+        color: #fff;
+        
+    }
+
+    .rahmen-button-gelb{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #000;
+        padding: 1vh 1.5vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color:#d14b37;
+        border: #d14b37;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 70px;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 1vw; 
+    }
+    .rahmen-button-gelb:hover{
+        background-color: #000;
+    }
+
+   

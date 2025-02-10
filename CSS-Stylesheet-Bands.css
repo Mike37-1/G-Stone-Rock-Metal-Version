@@ -1,0 +1,106 @@
+.bands{
+    background-color: #000;
+}
+.bands-carousel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 14vw 0 14vw;
+    height: 100%;
+}
+    .bands-carousel-item-track{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .band{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2vw;
+        }
+        .bandname{
+            font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+            text-align: center;
+        }
+        .bandname-zulang{
+            font-size: clamp(1rem, 2vw, 2.3rem);
+            
+            text-align: center;
+        }
+        .band-foto{
+            border: #d14b37;
+            border-width: 5px 0 5px 0;
+            border-style: solid;
+            border-radius: 10px;
+            height: auto;
+            width: 18vw;
+        }
+
+    .bands-button-left{
+        order: 0;
+        cursor: pointer;
+        margin: 0 1vw 0 0;
+    }
+
+    .bands-button-right{
+        order: 7;
+        cursor: pointer;
+        margin: 0 1vw 0 0;
+    }
+    .bands-button-left:hover, .bands-button-right:hover{
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .spotlight-band{
+        order: 4;
+    }
+
+    .band-side{
+        transform: scale(0.6);
+        margin: -3vw;
+    }
+    .band-l{
+        order: 2;
+    }
+    .band-ml{
+        order: 3;
+    }
+    .band-mr{
+        order: 5;
+    }
+    .band-r{
+        order: 6;
+    }
+    .band-hidden{
+        display: none !important;
+    }
+
+    @media(max-width:1500px){
+        .band-l, .band-r{
+            display: none;
+        }
+        .band-foto{
+            width: 25vw;
+        }
+    }
+    @media(max-width:800px){
+        .band-ml, .band-mr{
+            display: none;
+        }
+        .band-foto{
+            width: 50vw;
+        }
+    }
+    @media(max-width:500px){
+        .band-foto{
+            width: 65vw;
+        }
+    }
+    
